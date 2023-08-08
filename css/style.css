@@ -347,7 +347,6 @@ body {
 #bg-nav {
 	background-color: rgb(240 245 250);
 	padding: 0;
-	overflow: hidden;
 }
 
 #bg-nav .sticky {
