@@ -78,9 +78,16 @@ body {
 	align-items: center;
 }
 
-.header-container img {
-	width: 120px;
+.header-container .logo p {
+	color: #0052cc;
+	font-weight: 700;
+	font-size: 32px;
+	margin: 0;
 }
+
+/* .header-container img {
+	width: 120px;
+} */
 
 .header-nav ul li.search .btn {
 	background-color: rgba(0, 0, 0, 0);
@@ -356,7 +363,7 @@ body {
 
 #bg-nav .header-container.sticky {
 	max-width: 100%;
-	padding: 0 60px;
+	padding: 0 72px;
 }
 
 /* #bg-nav .header-container.sticky+.hero-header {
@@ -378,7 +385,7 @@ body {
 }
 
 .hero-header {
-	padding-left: 150px;
+	padding-left: 72px;
 	padding-top: 50px;
 	padding-bottom: 50px;
 	height: 1100px;
@@ -550,7 +557,7 @@ body {
 }
 
 .hero-header .sub-banner {
-	width: 850px;
+	width: 855px;
 	right: 240px;
 	bottom: -60px;
 }
@@ -1339,6 +1346,8 @@ body {
 
 #team .infor .item {
 	border-bottom: 1px solid #e6e6e6;
+	display: flex;
+	align-items: center;
 }
 
 #team .infor .item:nth-child(3) {
@@ -1396,8 +1405,16 @@ body {
 	color: #fff;
 }
 
-#team .infor .item div img {
+#team .infor .item div.img {
+	height: 550px;
+	overflow: hidden;
+	position: relative;
+}
+
+#team .infor .item div.img img {
 	width: 100%;
+	position: absolute;
+	bottom: 0;
 }
 
 /* NOTE blog */
@@ -1742,34 +1759,6 @@ body {
 
 /* ANCHOR animation */
 
-
-
-.reveal {
-	position: relative;
-	opacity: 0;
-}
-
-.reveal.active {
-	opacity: 1;
-}
-
-.active.fade-bottom {
-	animation: fade-bottom 1s;
-}
-
-@keyframes fade-bottom {
-	0% {
-		transform: translateY(100px);
-		opacity: 0;
-	}
-
-	100% {
-		transform: translateY(0);
-		opacity: 1;
-	}
-}
-
-
 .animated {
 	-webkit-animation-duration: 1s;
 	animation-duration: 1s;
@@ -1811,15 +1800,6 @@ body {
 	animation-delay: 400ms;
 }
 
-.active.fadeInUpShorter {
-	animation: fadeInUpShorter 1s;
-}
-
-.active.fadeInUpShorter-delay {
-	animation: fadeInUpShorter 1s;
-
-}
-
 @keyframes fadeInUpShorter {
 	0% {
 		opacity: 0;
@@ -1832,57 +1812,6 @@ body {
 	}
 }
 
-.active.fadeInRightShorter {
-	animation: fadeInRightShorter 1s;
-}
-
-@keyframes fadeInRightShorter {
-	0% {
-		opacity: 0;
-		transform: translate(-50px, 0);
-	}
-
-	100% {
-		opacity: 1;
-		transform: none;
-	}
-}
-
-.active.fadeInLeftShorter {
-	animation: fadeInLeftShorter 1s;
-}
-
-@keyframes fadeInLeftShorter {
-	0% {
-		opacity: 0;
-		transform: translate(50px, 0);
-	}
-
-	100% {
-		opacity: 1;
-		transform: none;
-	}
-}
-
-.fadeIn-delay-500 {
-	animation-name: fadeIn;
-	animation-delay: 500ms;
-}
-
-.active.fadeIn-100 {
-	animation: fadeIn 1s;
-}
-
-
-@keyframes fadeIn {
-	0% {
-		opacity: 0;
-	}
-
-	100% {
-		opacity: 1;
-	}
-}
 
 @media screen and (max-width:1199px) {
 	#bg-nav .header-container.sticky {
